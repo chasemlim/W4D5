@@ -8,3 +8,23 @@
   [1m[35m (469.9ms)[0m  [1m[35mCREATE DATABASE "Goalz_test" ENCODING = 'unicode'[0m
   [1m[35m (121.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "Goalz_test"[0m
   [1m[35m (446.1ms)[0m  [1m[35mCREATE DATABASE "Goalz_test" ENCODING = 'unicode'[0m
+  [1m[35m (121.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "Goalz_test"[0m
+  [1m[35m (441.4ms)[0m  [1m[35mCREATE DATABASE "Goalz_test" ENCODING = 'unicode'[0m
+  [1m[35m (121.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "Goalz_test"[0m
+  [1m[35m (405.7ms)[0m  [1m[35mCREATE DATABASE "Goalz_test" ENCODING = 'unicode'[0m
+  [1m[35m (124.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS "Goalz_test"[0m
+  [1m[35m (334.2ms)[0m  [1m[35mCREATE DATABASE "Goalz_test" ENCODING = 'unicode'[0m
+  [1m[35m (118.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "Goalz_test"[0m
+  [1m[35m (427.7ms)[0m  [1m[35mCREATE DATABASE "Goalz_test" ENCODING = 'unicode'[0m
+  [1m[35m (120.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "Goalz_test"[0m
+  [1m[35m (415.4ms)[0m  [1m[35mCREATE DATABASE "Goalz_test" ENCODING = 'unicode'[0m
+  [1m[35m (126.9ms)[0m  [1m[35mDROP DATABASE IF EXISTS "Goalz_test"[0m
+  [1m[35m (389.6ms)[0m  [1m[35mCREATE DATABASE "Goalz_test" ENCODING = 'unicode'[0m
+  [1m[35m (146.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "Goalz_test"[0m
+  [1m[35m (321.8ms)[0m  [1m[35mCREATE DATABASE "Goalz_test" ENCODING = 'unicode'[0m
+  [1m[35m (122.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS "Goalz_test"[0m
+  [1m[35m (287.0ms)[0m  [1m[35mCREATE DATABASE "Goalz_test" ENCODING = 'unicode'[0m
+  [1m[35m (122.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "Goalz_test"[0m
+  [1m[35m (299.1ms)[0m  [1m[35mCREATE DATABASE "Goalz_test" ENCODING = 'unicode'[0m
+  [1m[35m (122.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "Goalz_test"[0m
+  [1m[35m (250.8ms)[0m  [1m[35mCREATE DATABASE "Goalz_test" ENCODING = 'unicode'[0m
