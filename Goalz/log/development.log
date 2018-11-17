@@ -2536,3 +2536,39 @@ Processing by SessionsController#new as HTML
 Completed 200 OK in 58ms (Views: 56.7ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/users/new" for 127.0.0.1 at 2018-11-16 17:04:56 -0800
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 150ms (Views: 148.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/session" for 127.0.0.1 at 2018-11-16 17:06:39 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"3908gvZOCnB0L08ffVv0b306B6xNH7BApGQvPvz2Qf6w7byR1Ggyk8YxWJQxPjUuYxHTEuqWsGkFDCob5yNdzQ==", "user"=>{"username"=>"Peter11", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (55.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Peter11"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:46
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:37
+  [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "Peter11"], ["id", 5], ["LIMIT", 1]]
+  ↳ app/models/user.rb:37
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "uDAjVRdTpct7REaAvrHALg"], ["id", 5], ["LIMIT", 1]]
+  ↳ app/models/user.rb:37
+  [1m[36mUser Update (1.0ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "uDAjVRdTpct7REaAvrHALg"], ["updated_at", "2018-11-17 01:06:40.024568"], ["id", 5]]
+  ↳ app/models/user.rb:37
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:37
+Redirected to http://localhost:3000/users/5
+Completed 302 Found in 150ms (ActiveRecord: 58.7ms)
+
+
+Started GET "/users/5" for 127.0.0.1 at 2018-11-16 17:06:40 -0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:25
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 58ms (Views: 54.6ms | ActiveRecord: 1.2ms)
+
+
