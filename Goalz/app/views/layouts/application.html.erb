@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
     <title>Goalz</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -10,6 +11,15 @@
   </head>
 
   <body>
+    <img class="goalzimg" src="https://jermoneglenn.com/wp-content/uploads/2016/08/goals.png" alt="GOALZ">
+    
+    <form action="<%= session_url %>" method="post">
+      <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+      <input type="hidden" name="_method" value="delete">
+      
+    <input class="logout" type="submit" name="" value="Log Out">
+    </form>
+    
     <%= yield %>
   </body>
 </html>

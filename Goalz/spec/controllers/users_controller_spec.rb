@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe UsersController, type: :controller do
   describe 'GET #new' do
     it 'renders the new user page' do
-      get :new, user: {}
+      get :new, {}
       expect(response).to render_template('new')
       expect(response).to have_http_status(200)
     end
